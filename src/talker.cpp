@@ -3,13 +3,18 @@
  * Copyright (C) 2017 by Sherif Shazly                      *
  *                                                          *
  ***********************************************************/
-//   @file  listener.cpp
-//   @brief   This is a cpp file to talk to a node n in ROS environment
-//   @author    Unknown ROS-Developer
-//   @date  2017/10/31
-//  @copyright Copyright (C) 2017 BSD
-//  @bug No known bugs.
-//
+/**
+ *   @file  talker.cpp
+ *   @brief   This file talks to node n in the ROS environment
+ *
+ *   Publishes text to the ROS environment at a specified frequency
+ *
+ *   @author    Sherif Shazly
+ *   @date  2017/10/31
+ *  @copyright Copyright (C) 2017 BSD
+ *  @bug No known bugs.
+ */
+
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 
@@ -55,8 +60,7 @@ int main(int argc, char **argv) {
   // than we can send them, the number here specifies how many messages to
   // buffer up before throwing some away.
   //
-  ros::Publisher chatter_pub = n.advertise < std_msgs::String
-      > ("chatter", 1000);
+  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
 
   ros::Rate loop_rate(10);
 

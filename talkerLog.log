@@ -1,0 +1,547 @@
+Project:               Project-Debug@build
+Index Version:         114.0
+Scanner Info Provider: org.eclipse.cdt.internal.core.settings.model.ScannerInfoProviderProxy
+Build Configuration:   Configuration
+File:      file:/home/sherif/catkin_ws/src/beginner_tutorials/src/talker.cpp
+Context:   file:/home/sherif/catkin_ws/src/beginner_tutorials/src/talker.cpp
+Language:  GNU C++
+
+Include Search Path (option -I):
+   /usr/include/c++/4.6
+   /usr/src/gtest/include
+   /usr/src/gtest
+   /opt/ros/kinetic/include
+   /opt/ros/kinetic/include/xmlrpcpp
+   /usr/include/c++/5.4.0
+
+Local Include Search Path (option -iquote):
+
+Preincluded files (option -include):
+
+Preincluded macro files (option -imacros):
+
+Macro definitions (option -D):
+   ROSCONSOLE_BACKEND_LOG4CXX=
+   ROS_BUILD_SHARED_LIBS=1
+   ROS_PACKAGE_NAME="beginner_tutorials"
+
+Macro definitions (from configuration + headers in index):
+   CPP_COMMON_PLATFORM_H_=
+   CPP_CORE_TYPES_H=
+   LLONG_MAX=__LONG_LONG_MAX__
+   LLONG_MIN=(-__LONG_LONG_MAX__ - 1)
+   ROSCONSOLE_AUTOINIT=do { if (ROS_UNLIKELY(!::ros::console::g_initialized)) { ::ros::console::initialize(); } } while(0)
+   ROSCONSOLE_CONSOLE_BACKEND_H=
+   ROSCONSOLE_DECL=ROS_HELPER_IMPORT
+   ROSCONSOLE_DEFAULT_NAME=ROSCONSOLE_NAME_PREFIX
+   ROSCONSOLE_DEFINE_LOCATION(cond,level,name)=ROSCONSOLE_AUTOINIT; static ::ros::console::LogLocation __rosconsole_define_location__loc = {false, false, ::ros::console::levels::Count, 0}; if (ROS_UNLIKELY(!__rosconsole_define_location__loc.initialized_)) { initializeLogLocation(&__rosconsole_define_location__loc, name, level); } if (ROS_UNLIKELY(__rosconsole_define_location__loc.level_ != level)) { setLogLocationLevel(&__rosconsole_define_location__loc, level); checkLogLocationEnabled(&__rosconsole_define_location__loc); } bool __rosconsole_define_location__enabled = __rosconsole_define_location__loc.logger_enabled_ && (cond);
+   ROSCONSOLE_MIN_SEVERITY=ROSCONSOLE_SEVERITY_DEBUG
+   ROSCONSOLE_NAME_PREFIX=ROSCONSOLE_ROOT_LOGGER_NAME "." ROSCONSOLE_PACKAGE_NAME
+   ROSCONSOLE_PACKAGE_NAME=ROS_PACKAGE_NAME
+   ROSCONSOLE_PRINTF_ATTRIBUTE(a,b)=
+   ROSCONSOLE_PRINT_AT_LOCATION(...)=ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(0, __VA_ARGS__)
+   ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(filter,...)=::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+   ROSCONSOLE_PRINT_STREAM_AT_LOCATION(args)=ROSCONSOLE_PRINT_STREAM_AT_LOCATION_WITH_FILTER(0, args)
+   ROSCONSOLE_PRINT_STREAM_AT_LOCATION_WITH_FILTER(filter,args)=do { std::stringstream __rosconsole_print_stream_at_location_with_filter__ss__; __rosconsole_print_stream_at_location_with_filter__ss__ << args; ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __rosconsole_print_stream_at_location_with_filter__ss__, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__); } while (0)
+   ROSCONSOLE_ROOT_LOGGER_NAME="ros"
+   ROSCONSOLE_ROSASSERT_H=
+   ROSCONSOLE_ROSCONSOLE_H=
+   ROSCONSOLE_SEVERITY_DEBUG=0
+   ROSCONSOLE_SEVERITY_ERROR=3
+   ROSCONSOLE_SEVERITY_FATAL=4
+   ROSCONSOLE_SEVERITY_INFO=1
+   ROSCONSOLE_SEVERITY_NONE=5
+   ROSCONSOLE_SEVERITY_WARN=2
+   ROSCONSOLE_STATIC_ASSERT_H=
+   ROSCPP_ADVERTISE_OPTIONS_H=
+   ROSCPP_ADVERTISE_SERVICE_OPTIONS_H=
+   ROSCPP_COMMON_H=
+   ROSCPP_DECL=ROS_HELPER_IMPORT
+   ROSCPP_EXCEPTIONS_H=
+   ROSCPP_FORWARDS_H=
+   ROSCPP_INIT_H=
+   ROSCPP_MASTER_H=
+   ROSCPP_MESSAGE_EVENT_H=
+   ROSCPP_MESSAGE_H=
+   ROSCPP_MESSAGE_HAS_DEFINITION=
+   ROSCPP_NAMES_H=
+   ROSCPP_NODE_HANDLE_H=
+   ROSCPP_PARAMETER_ADAPTER_H=
+   ROSCPP_PARAM_H=
+   ROSCPP_PUBLISHER_HANDLE_H=
+   ROSCPP_ROS_H=
+   ROSCPP_SERIALIZATION_DECL=ROS_HELPER_IMPORT
+   ROSCPP_SERIALIZATION_H=
+   ROSCPP_SERIALIZATION_MACROS_HPP_=
+   ROSCPP_SERVICE_CLIENT_H=
+   ROSCPP_SERVICE_CLIENT_OPTIONS_H=
+   ROSCPP_SERVICE_H=
+   ROSCPP_SERVICE_HANDLE_H=
+   ROSCPP_SERVICE_MESSAGE_HELPER_H=
+   ROSCPP_SERVICE_TRAITS_H=
+   ROSCPP_SINGLE_SUBSCRIBER_PUBLISHER_H=
+   ROSCPP_SPINNER_H=
+   ROSCPP_SUBSCRIBER_HANDLE_H=
+   ROSCPP_SUBSCRIBE_OPTIONS_H=
+   ROSCPP_SUBSCRIPTION_CALLBACK_HELPER_H=
+   ROSCPP_THIS_NODE_H=
+   ROSCPP_TIMER_H=
+   ROSCPP_TIMER_OPTIONS_H=
+   ROSCPP_TOPIC_H=
+   ROSCPP_TRANSPORT_HINTS_H=
+   ROSCPP_TYPES_H=
+   ROSCPP_WALL_TIMER_H=
+   ROSCPP_WALL_TIMER_OPTIONS_H=
+   ROSLIB_BUILTIN_MESSAGE_TRAITS_H=
+   ROSLIB_CREATE_SIMPLE_TRAITS(Type)=template<> struct IsSimple<Type> : public TrueType {}; template<> struct IsFixedSize<Type> : public TrueType {};
+   ROSLIB_EXCEPTION_H=
+   ROSLIB_MACROS_H_INCLUDED=
+   ROSLIB_MESSAGE_FORWARD_H=
+   ROSLIB_MESSAGE_OPERATIONS_H=
+   ROSLIB_MESSAGE_TRAITS_H=
+   ROSLIB_RATE_H=
+   ROSLIB_SERIALIZED_MESSAGE_H=
+   ROSTIME_DECL=ROS_HELPER_IMPORT
+   ROSTIME_DECL_HPP_INCLUDED=
+   ROS_ASSERT(cond)=do { if (!(cond)) { ROS_FATAL("ASSERTION FAILED\n\tfile = %s\n\tline = %d\n\tcond = %s\n", __FILE__, __LINE__, #cond); ROS_ISSUE_BREAK() } } while (0)
+   ROS_ASSERT_CMD(cond,cmd)=do { if (!(cond)) { cmd; } } while (0)
+   ROS_ASSERT_ENABLED=
+   ROS_ASSERT_MSG(cond,...)=do { if (!(cond)) { ROS_FATAL("ASSERTION FAILED\n\tfile = %s\n\tline = %d\n\tcond = %s\n\tmessage = ", __FILE__, __LINE__, #cond); ROS_FATAL(__VA_ARGS__); ROS_FATAL("\n"); ROS_ISSUE_BREAK(); } } while (0)
+   ROS_BREAK()=do { ROS_FATAL("BREAKPOINT HIT\n\tfile = %s\n\tline=%d\n", __FILE__, __LINE__); ROS_ISSUE_BREAK() } while (0)
+   ROS_COMPILE_ASSERT(cond)=BOOST_STATIC_ASSERT(cond)
+   ROS_CREATE_SIMPLE_SERIALIZER(Type)=template<> struct Serializer<Type> { template<typename Stream> inline static void write(Stream& stream, const Type v) { *reinterpret_cast<Type*>(stream.advance(sizeof(v))) = v; } template<typename Stream> inline static void read(Stream& stream, Type& v) { v = *reinterpret_cast<Type*>(stream.advance(sizeof(v))); } inline static uint32_t serializedLength(const Type&) { return sizeof(Type); } };
+   ROS_CREATE_SIMPLE_SERIALIZER_ARM(Type)=template<> struct Serializer<Type> { template<typename Stream> inline static void write(Stream& stream, const Type v) { memcpy(stream.advance(sizeof(v)), &v, sizeof(v) ); } template<typename Stream> inline static void read(Stream& stream, Type& v) { memcpy(&v, stream.advance(sizeof(v)), sizeof(v) ); } inline static uint32_t serializedLength(const Type&) { return sizeof(Type); } };
+   ROS_DEBUG(...)=ROS_LOG(::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_DEBUG_COND(cond,...)=ROS_LOG_COND(cond, ::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_DEBUG_COND_NAMED(cond,name,...)=ROS_LOG_COND(cond, ::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_DEBUG_DELAYED_THROTTLE(rate,...)=ROS_LOG_DELAYED_THROTTLE(rate, ::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_DEBUG_DELAYED_THROTTLE_NAMED(rate,name,...)=ROS_LOG_DELAYED_THROTTLE(rate, ::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_DEBUG_FILTER(filter,...)=ROS_LOG_FILTER(filter, ::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_DEBUG_FILTER_NAMED(filter,name,...)=ROS_LOG_FILTER(filter, ::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_DEBUG_NAMED(name,...)=ROS_LOG(::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_DEBUG_ONCE(...)=ROS_LOG_ONCE(::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_DEBUG_ONCE_NAMED(name,...)=ROS_LOG_ONCE(::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_DEBUG_STREAM(args)=ROS_LOG_STREAM(::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_DEBUG_STREAM_COND(cond,args)=ROS_LOG_STREAM_COND(cond, ::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_DEBUG_STREAM_COND_NAMED(cond,name,args)=ROS_LOG_STREAM_COND(cond, ::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_DEBUG_STREAM_DELAYED_THROTTLE(rate,args)=ROS_LOG_STREAM_DELAYED_THROTTLE(rate, ::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_DEBUG_STREAM_DELAYED_THROTTLE_NAMED(rate,name,args)=ROS_LOG_STREAM_DELAYED_THROTTLE(rate, ::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_DEBUG_STREAM_FILTER(filter,args)=ROS_LOG_STREAM_FILTER(filter, ::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_DEBUG_STREAM_FILTER_NAMED(filter,name,args)=ROS_LOG_STREAM_FILTER(filter, ::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_DEBUG_STREAM_NAMED(name,args)=ROS_LOG_STREAM(::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_DEBUG_STREAM_ONCE(args)=ROS_LOG_STREAM_ONCE(::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_DEBUG_STREAM_ONCE_NAMED(name,args)=ROS_LOG_STREAM_ONCE(::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_DEBUG_STREAM_THROTTLE(rate,args)=ROS_LOG_STREAM_THROTTLE(rate, ::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_DEBUG_STREAM_THROTTLE_NAMED(rate,name,args)=ROS_LOG_STREAM_THROTTLE(rate, ::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_DEBUG_THROTTLE(rate,...)=ROS_LOG_THROTTLE(rate, ::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_DEBUG_THROTTLE_NAMED(rate,name,...)=ROS_LOG_THROTTLE(rate, ::ros::console::levels::Debug, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_DECLARE_ALLINONE_SERIALIZER=template<typename Stream, typename T> inline static void write(Stream& stream, const T& t) { allInOne<Stream, const T&>(stream, t); } template<typename Stream, typename T> inline static void read(Stream& stream, T& t) { allInOne<Stream, T&>(stream, t); } template<typename T> inline static uint32_t serializedLength(const T& t) { LStream stream; allInOne<LStream, const T&>(stream, t); return stream.getLength(); }
+   ROS_DECLARE_MESSAGE(msg)=ROS_DECLARE_MESSAGE_WITH_ALLOCATOR(msg, msg, std::allocator)
+   ROS_DECLARE_MESSAGE_WITH_ALLOCATOR(msg,new_name,alloc)=template<class Allocator> struct msg##_; typedef msg##_<alloc<void> > new_name; typedef boost::shared_ptr<new_name> new_name##Ptr; typedef boost::shared_ptr<new_name const> new_name##ConstPtr;
+   ROS_DEPRECATED=
+   ROS_DURATION_H=
+   ROS_ERROR(...)=ROS_LOG(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_ERROR_COND(cond,...)=ROS_LOG_COND(cond, ::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_ERROR_COND_NAMED(cond,name,...)=ROS_LOG_COND(cond, ::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_ERROR_DELAYED_THROTTLE(rate,...)=ROS_LOG_DELAYED_THROTTLE(rate, ::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_ERROR_DELAYED_THROTTLE_NAMED(rate,name,...)=ROS_LOG_DELAYED_THROTTLE(rate, ::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_ERROR_FILTER(filter,...)=ROS_LOG_FILTER(filter, ::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_ERROR_FILTER_NAMED(filter,name,...)=ROS_LOG_FILTER(filter, ::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_ERROR_NAMED(name,...)=ROS_LOG(::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_ERROR_ONCE(...)=ROS_LOG_ONCE(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_ERROR_ONCE_NAMED(name,...)=ROS_LOG_ONCE(::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_ERROR_STREAM(args)=ROS_LOG_STREAM(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_ERROR_STREAM_COND(cond,args)=ROS_LOG_STREAM_COND(cond, ::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_ERROR_STREAM_COND_NAMED(cond,name,args)=ROS_LOG_STREAM_COND(cond, ::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_ERROR_STREAM_DELAYED_THROTTLE(rate,args)=ROS_LOG_STREAM_DELAYED_THROTTLE(rate, ::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_ERROR_STREAM_DELAYED_THROTTLE_NAMED(rate,name,args)=ROS_LOG_STREAM_DELAYED_THROTTLE(rate, ::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_ERROR_STREAM_FILTER(filter,args)=ROS_LOG_STREAM_FILTER(filter, ::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_ERROR_STREAM_FILTER_NAMED(filter,name,args)=ROS_LOG_STREAM_FILTER(filter, ::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_ERROR_STREAM_NAMED(name,args)=ROS_LOG_STREAM(::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_ERROR_STREAM_ONCE(args)=ROS_LOG_STREAM_ONCE(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_ERROR_STREAM_ONCE_NAMED(name,args)=ROS_LOG_STREAM_ONCE(::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_ERROR_STREAM_THROTTLE(rate,args)=ROS_LOG_STREAM_THROTTLE(rate, ::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_ERROR_STREAM_THROTTLE_NAMED(rate,name,args)=ROS_LOG_STREAM_THROTTLE(rate, ::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_ERROR_THROTTLE(rate,...)=ROS_LOG_THROTTLE(rate, ::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_ERROR_THROTTLE_NAMED(rate,name,...)=ROS_LOG_THROTTLE(rate, ::ros::console::levels::Error, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_FATAL(...)=ROS_LOG(::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_FATAL_COND(cond,...)=ROS_LOG_COND(cond, ::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_FATAL_COND_NAMED(cond,name,...)=ROS_LOG_COND(cond, ::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_FATAL_DELAYED_THROTTLE(rate,...)=ROS_LOG_DELAYED_THROTTLE(rate, ::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_FATAL_DELAYED_THROTTLE_NAMED(rate,name,...)=ROS_LOG_DELAYED_THROTTLE(rate, ::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_FATAL_FILTER(filter,...)=ROS_LOG_FILTER(filter, ::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_FATAL_FILTER_NAMED(filter,name,...)=ROS_LOG_FILTER(filter, ::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_FATAL_NAMED(name,...)=ROS_LOG(::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_FATAL_ONCE(...)=ROS_LOG_ONCE(::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_FATAL_ONCE_NAMED(name,...)=ROS_LOG_ONCE(::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_FATAL_STREAM(args)=ROS_LOG_STREAM(::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_FATAL_STREAM_COND(cond,args)=ROS_LOG_STREAM_COND(cond, ::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_FATAL_STREAM_COND_NAMED(cond,name,args)=ROS_LOG_STREAM_COND(cond, ::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_FATAL_STREAM_DELAYED_THROTTLE(rate,args)=ROS_LOG_STREAM_DELAYED_THROTTLE(rate, ::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_FATAL_STREAM_DELAYED_THROTTLE_NAMED(rate,name,args)=ROS_LOG_STREAM_DELAYED_THROTTLE(rate, ::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_FATAL_STREAM_FILTER(filter,args)=ROS_LOG_STREAM_FILTER(filter, ::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_FATAL_STREAM_FILTER_NAMED(filter,name,args)=ROS_LOG_STREAM_FILTER(filter, ::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_FATAL_STREAM_NAMED(name,args)=ROS_LOG_STREAM(::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_FATAL_STREAM_ONCE(args)=ROS_LOG_STREAM_ONCE(::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_FATAL_STREAM_ONCE_NAMED(name,args)=ROS_LOG_STREAM_ONCE(::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_FATAL_STREAM_THROTTLE(rate,args)=ROS_LOG_STREAM_THROTTLE(rate, ::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_FATAL_STREAM_THROTTLE_NAMED(rate,name,args)=ROS_LOG_STREAM_THROTTLE(rate, ::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_FATAL_THROTTLE(rate,...)=ROS_LOG_THROTTLE(rate, ::ros::console::levels::Fatal, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_FATAL_THROTTLE_NAMED(rate,name,...)=ROS_LOG_THROTTLE(rate, ::ros::console::levels::Fatal, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_FORCE_INLINE=inline
+   ROS_HELPER_EXPORT=
+   ROS_HELPER_IMPORT=
+   ROS_HELPER_LOCAL=
+   ROS_IMPLEMENT_SIMPLE_TOPIC_TRAITS(msg,md5sum,datatype,definition)=namespace ros { namespace message_traits { template<> struct MD5Sum<msg> { static const char* value() { return md5sum; } static const char* value(const msg&) { return value(); } }; template<> struct DataType<msg> { static const char* value() { return datatype; } static const char* value(const msg&) { return value(); } }; template<> struct Definition<msg> { static const char* value() { return definition; } static const char* value(const msg&) { return value(); } }; } }
+   ROS_INFO(...)=ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_INFO_COND(cond,...)=ROS_LOG_COND(cond, ::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_INFO_COND_NAMED(cond,name,...)=ROS_LOG_COND(cond, ::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_INFO_DELAYED_THROTTLE(rate,...)=ROS_LOG_DELAYED_THROTTLE(rate, ::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_INFO_DELAYED_THROTTLE_NAMED(rate,name,...)=ROS_LOG_DELAYED_THROTTLE(rate, ::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_INFO_FILTER(filter,...)=ROS_LOG_FILTER(filter, ::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_INFO_FILTER_NAMED(filter,name,...)=ROS_LOG_FILTER(filter, ::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_INFO_NAMED(name,...)=ROS_LOG(::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_INFO_ONCE(...)=ROS_LOG_ONCE(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_INFO_ONCE_NAMED(name,...)=ROS_LOG_ONCE(::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_INFO_STREAM(args)=ROS_LOG_STREAM(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_INFO_STREAM_COND(cond,args)=ROS_LOG_STREAM_COND(cond, ::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_INFO_STREAM_COND_NAMED(cond,name,args)=ROS_LOG_STREAM_COND(cond, ::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_INFO_STREAM_DELAYED_THROTTLE(rate,args)=ROS_LOG_STREAM_DELAYED_THROTTLE(rate, ::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_INFO_STREAM_DELAYED_THROTTLE_NAMED(rate,name,args)=ROS_LOG_STREAM_DELAYED_THROTTLE(rate, ::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_INFO_STREAM_FILTER(filter,args)=ROS_LOG_STREAM_FILTER(filter, ::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_INFO_STREAM_FILTER_NAMED(filter,name,args)=ROS_LOG_STREAM_FILTER(filter, ::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_INFO_STREAM_NAMED(name,args)=ROS_LOG_STREAM(::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_INFO_STREAM_ONCE(args)=ROS_LOG_STREAM_ONCE(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_INFO_STREAM_ONCE_NAMED(name,args)=ROS_LOG_STREAM_ONCE(::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_INFO_STREAM_THROTTLE(rate,args)=ROS_LOG_STREAM_THROTTLE(rate, ::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_INFO_STREAM_THROTTLE_NAMED(rate,name,args)=ROS_LOG_STREAM_THROTTLE(rate, ::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_INFO_THROTTLE(rate,...)=ROS_LOG_THROTTLE(rate, ::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_INFO_THROTTLE_NAMED(rate,name,...)=ROS_LOG_THROTTLE(rate, ::ros::console::levels::Info, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_ISSUE_BREAK()=abort();
+   ROS_LIKELY(x)=__builtin_expect((x),1)
+   ROS_LOG(level,name,...)=ROS_LOG_COND(true, level, name, __VA_ARGS__)
+   ROS_LOG_COND(cond,level,name,...)=do { ROSCONSOLE_DEFINE_LOCATION(cond, level, name); if (ROS_UNLIKELY(__rosconsole_define_location__enabled)) { ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); } } while(0)
+   ROS_LOG_DELAYED_THROTTLE(rate,level,name,...)=do { ROSCONSOLE_DEFINE_LOCATION(true, level, name); ::ros::Time __ros_log_delayed_throttle__now__ = ::ros::Time::now(); static double __ros_log_delayed_throttle__last_hit__ = __ros_log_delayed_throttle__now__.toSec(); if (ROS_UNLIKELY(__rosconsole_define_location__enabled) && ROS_UNLIKELY(__ros_log_delayed_throttle__last_hit__ + rate <= __ros_log_delayed_throttle__now__.toSec())) { __ros_log_delayed_throttle__last_hit__ = __ros_log_delayed_throttle__now__.toSec(); ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); } } while(0)
+   ROS_LOG_FILTER(filter,level,name,...)=do { ROSCONSOLE_DEFINE_LOCATION(true, level, name); if (ROS_UNLIKELY(__rosconsole_define_location__enabled) && (filter)->isEnabled()) { ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(filter, __VA_ARGS__); } } while(0)
+   ROS_LOG_ONCE(level,name,...)=do { ROSCONSOLE_DEFINE_LOCATION(true, level, name); static bool hit = false; if (ROS_UNLIKELY(__rosconsole_define_location__enabled) && ROS_UNLIKELY(!hit)) { hit = true; ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); } } while(0)
+   ROS_LOG_STREAM(level,name,args)=ROS_LOG_STREAM_COND(true, level, name, args)
+   ROS_LOG_STREAM_COND(cond,level,name,args)=do { ROSCONSOLE_DEFINE_LOCATION(cond, level, name); if (ROS_UNLIKELY(__rosconsole_define_location__enabled)) { ROSCONSOLE_PRINT_STREAM_AT_LOCATION(args); } } while(0)
+   ROS_LOG_STREAM_DELAYED_THROTTLE(rate,level,name,args)=do { ROSCONSOLE_DEFINE_LOCATION(true, level, name); ::ros::Time __ros_log_stream_delayed_throttle__now__ = ::ros::Time::now(); static double __ros_log_stream_delayed_throttle__last_hit__ = __ros_log_stream_delayed_throttle__now__.toSec(); if (ROS_UNLIKELY(__rosconsole_define_location__enabled) && ROS_UNLIKELY(__ros_log_stream_delayed_throttle__last_hit__ + rate <= __ros_log_stream_delayed_throttle__now__.toSec())) { __ros_log_stream_delayed_throttle__last_hit__ = __ros_log_stream_delayed_throttle__now__.toSec(); ROSCONSOLE_PRINT_STREAM_AT_LOCATION(args); } } while(0)
+   ROS_LOG_STREAM_FILTER(filter,level,name,args)=do { ROSCONSOLE_DEFINE_LOCATION(true, level, name); if (ROS_UNLIKELY(__rosconsole_define_location__enabled) && (filter)->isEnabled()) { ROSCONSOLE_PRINT_STREAM_AT_LOCATION_WITH_FILTER(filter, args); } } while(0)
+   ROS_LOG_STREAM_ONCE(level,name,args)=do { ROSCONSOLE_DEFINE_LOCATION(true, level, name); static bool __ros_log_stream_once__hit__ = false; if (ROS_UNLIKELY(__rosconsole_define_location__enabled) && ROS_UNLIKELY(!__ros_log_stream_once__hit__)) { __ros_log_stream_once__hit__ = true; ROSCONSOLE_PRINT_STREAM_AT_LOCATION(args); } } while(0)
+   ROS_LOG_STREAM_THROTTLE(rate,level,name,args)=do { ROSCONSOLE_DEFINE_LOCATION(true, level, name); static double __ros_log_stream_throttle__last_hit__ = 0.0; ::ros::Time __ros_log_stream_throttle__now__ = ::ros::Time::now(); if (ROS_UNLIKELY(__rosconsole_define_location__enabled) && ROS_UNLIKELY(__ros_log_stream_throttle__last_hit__ + rate <= __ros_log_stream_throttle__now__.toSec())) { __ros_log_stream_throttle__last_hit__ = __ros_log_stream_throttle__now__.toSec(); ROSCONSOLE_PRINT_STREAM_AT_LOCATION(args); } } while(0)
+   ROS_LOG_THROTTLE(rate,level,name,...)=do { ROSCONSOLE_DEFINE_LOCATION(true, level, name); static double last_hit = 0.0; ::ros::Time now = ::ros::Time::now(); if (ROS_UNLIKELY(__rosconsole_define_location__enabled) && ROS_UNLIKELY(last_hit + rate <= now.toSec())) { last_hit = now.toSec(); ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); } } while(0)
+   ROS_NEW_SERIALIZATION_API=1
+   ROS_STATIC_ASSERT(cond)=BOOST_STATIC_ASSERT(cond)
+   ROS_TIME_H_INCLUDED=
+   ROS_UNLIKELY(x)=__builtin_expect((x),0)
+   ROS_VERSION=ROS_VERSION_COMBINED(ROS_VERSION_MAJOR, ROS_VERSION_MINOR, ROS_VERSION_PATCH)
+   ROS_VERSION_COMBINED(major,minor,patch)=(((major) << 20) | ((minor) << 10) | (patch))
+   ROS_VERSION_GE(major1,minor1,patch1,major2,minor2,patch2)=(ROS_VERSION_COMBINED(major1, minor1, patch1) >= ROS_VERSION_COMBINED(major2, minor2, patch2))
+   ROS_VERSION_MAJOR=1
+   ROS_VERSION_MINIMUM(major,minor,patch)=ROS_VERSION_GE(ROS_VERSION_MAJOR, ROS_VERSION_MINOR, ROS_VERSION_PATCH, major, minor, patch)
+   ROS_VERSION_MINOR=12
+   ROS_VERSION_PATCH=7
+   ROS_WARN(...)=ROS_LOG(::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_WARN_COND(cond,...)=ROS_LOG_COND(cond, ::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_WARN_COND_NAMED(cond,name,...)=ROS_LOG_COND(cond, ::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_WARN_DELAYED_THROTTLE(rate,...)=ROS_LOG_DELAYED_THROTTLE(rate, ::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_WARN_DELAYED_THROTTLE_NAMED(rate,name,...)=ROS_LOG_DELAYED_THROTTLE(rate, ::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_WARN_FILTER(filter,...)=ROS_LOG_FILTER(filter, ::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_WARN_FILTER_NAMED(filter,name,...)=ROS_LOG_FILTER(filter, ::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_WARN_NAMED(name,...)=ROS_LOG(::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_WARN_ONCE(...)=ROS_LOG_ONCE(::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_WARN_ONCE_NAMED(name,...)=ROS_LOG_ONCE(::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   ROS_WARN_STREAM(args)=ROS_LOG_STREAM(::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_WARN_STREAM_COND(cond,args)=ROS_LOG_STREAM_COND(cond, ::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_WARN_STREAM_COND_NAMED(cond,name,args)=ROS_LOG_STREAM_COND(cond, ::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_WARN_STREAM_DELAYED_THROTTLE(rate,args)=ROS_LOG_STREAM_DELAYED_THROTTLE(rate, ::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_WARN_STREAM_DELAYED_THROTTLE_NAMED(rate,name,args)=ROS_LOG_STREAM_DELAYED_THROTTLE(rate, ::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_WARN_STREAM_FILTER(filter,args)=ROS_LOG_STREAM_FILTER(filter, ::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_WARN_STREAM_FILTER_NAMED(filter,name,args)=ROS_LOG_STREAM_FILTER(filter, ::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_WARN_STREAM_NAMED(name,args)=ROS_LOG_STREAM(::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_WARN_STREAM_ONCE(args)=ROS_LOG_STREAM_ONCE(::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_WARN_STREAM_ONCE_NAMED(name,args)=ROS_LOG_STREAM_ONCE(::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_WARN_STREAM_THROTTLE(rate,args)=ROS_LOG_STREAM_THROTTLE(rate, ::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, args)
+   ROS_WARN_STREAM_THROTTLE_NAMED(rate,name,args)=ROS_LOG_STREAM_THROTTLE(rate, ::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, args)
+   ROS_WARN_THROTTLE(rate,...)=ROS_LOG_THROTTLE(rate, ::ros::console::levels::Warn, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+   ROS_WARN_THROTTLE_NAMED(rate,name,...)=ROS_LOG_THROTTLE(rate, ::ros::console::levels::Warn, std::string(ROSCONSOLE_NAME_PREFIX) + "." + name, __VA_ARGS__)
+   SROS_DESERIALIZE_BUFFER(ptr,data,data_size)={ if (data_size > 0) { memcpy(data, ptr, data_size); ptr += data_size; } }
+   SROS_DESERIALIZE_PRIMITIVE(ptr,data)={ memcpy(&data, ptr, sizeof(data)); ptr += sizeof(data); }
+   SROS_SERIALIZE_BUFFER(ptr,data,data_size)={ if (data_size > 0) { memcpy(ptr, data, data_size); ptr += data_size; } }
+   SROS_SERIALIZE_PRIMITIVE(ptr,data)={ memcpy(ptr, &data, sizeof(data)); ptr += sizeof(data); }
+   STD_MSGS_MESSAGE_STRING_H=
+   ULLONG_MAX=(__LONG_LONG_MAX__ * 2ULL + 1)
+   va_end(ap)=va_end (ap)
+   XMLRPCPP_DECL=ROS_HELPER_IMPORT
+   XMLRPCPP_DECL_H_INCLUDED=
+   _ALLOCATOR_H=1
+   _BACKWARD_BINDERS_H=1
+   _BASIC_IOS_H=1
+   _BASIC_IOS_TCC=1
+   _BASIC_STRING_H=1
+   _BASIC_STRING_TCC=1
+   _CHAR_TRAITS_H=1
+   _CONCEPT_CHECK_H=1
+   _CPP_TYPE_TRAITS_H=1
+   _CXXABI_FORCED_H=1
+   _EXCEPTION_DEFINES_H=1
+   _EXT_ALLOC_TRAITS_H=1
+   _EXT_NUMERIC_TRAITS=1
+   _EXT_TYPE_TRAITS=1
+   _FUNCTEXCEPT_H=1
+   _GLIBCXX_ATOMICITY_H=1
+   _GLIBCXX_ATOMIC_LOCK_FREE_H=1
+   _GLIBCXX_CCTYPE=1
+   _GLIBCXX_CLIMITS=1
+   _GLIBCXX_CMATH=1
+   _GLIBCXX_CSTDARG=1
+   _GLIBCXX_CSTDDEF=1
+   _GLIBCXX_CSTDIO=1
+   _GLIBCXX_CSTRING=1
+   _GLIBCXX_CWCHAR=1
+   _GLIBCXX_CWCTYPE=1
+   _GLIBCXX_DEBUG_ASSERT(_Condition)=
+   _GLIBCXX_DEBUG_MACRO_SWITCH_H=1
+   _GLIBCXX_DEBUG_ONLY(_Statement)=;
+   _GLIBCXX_DEBUG_PEDASSERT(_Condition)=
+   _GLIBCXX_FORWARD(_Tp,__val)=(__val)
+   _GLIBCXX_IOS=1
+   _GLIBCXX_IOSFWD=1
+   _GLIBCXX_IOSTREAM=1
+   _GLIBCXX_ISTREAM=1
+   _GLIBCXX_LIST=1
+   _GLIBCXX_MAKE_MOVE_IF_NOEXCEPT_ITERATOR(_Iter)=(_Iter)
+   _GLIBCXX_MAKE_MOVE_ITERATOR(_Iter)=(_Iter)
+   _GLIBCXX_MAP=1
+   _GLIBCXX_MOVE(__val)=(__val)
+   _GLIBCXX_MOVE3(_Tp,_Up,_Vp)=std::copy(_Tp, _Up, _Vp)
+   _GLIBCXX_MOVE_BACKWARD3(_Tp,_Up,_Vp)=std::copy_backward(_Tp, _Up, _Vp)
+   _GLIBCXX_NUM_CXX11_FACETS=8
+   _GLIBCXX_NUM_FACETS=14
+   _GLIBCXX_NUM_UNICODE_FACETS=0
+   _GLIBCXX_OSTREAM=1
+   _GLIBCXX_POSTYPES_H=1
+   _GLIBCXX_PREDEFINED_OPS_H=1
+   _GLIBCXX_RANGE_ACCESS_H=1
+   _GLIBCXX_READ_MEM_BARRIER=__asm __volatile ("":::"memory")
+   _GLIBCXX_SET=1
+   _GLIBCXX_SSTREAM=1
+   _GLIBCXX_STDEXCEPT=1
+   _GLIBCXX_STRING=1
+   _GLIBCXX_VECTOR=1
+   _GLIBCXX_WRITE_MEM_BARRIER=__asm __volatile ("":::"memory")
+   _GLIBXX_STREAMBUF=1
+   _IOS_BASE_H=1
+   _ISTREAM_TCC=1
+   _LIST_TCC=1
+   _LOCALE_CLASSES_H=1
+   _LOCALE_CLASSES_TCC=1
+   _LOCALE_FACETS_H=1
+   _LOCALE_FACETS_TCC=1
+   _LOCALE_FWD_H=1
+   _MEMORYFWD_H=1
+   _MOVE_H=1
+   _NEW=
+   _OSTREAM_INSERT_H=1
+   _OSTREAM_TCC=1
+   _PTR_TRAITS_H=1
+   _SSTREAM_TCC=1
+   _STL_ALGOBASE_H=1
+   _STL_BVECTOR_H=1
+   _STL_CONSTRUCT_H=1
+   _STL_FUNCTION_H=1
+   _STL_ITERATOR_BASE_FUNCS_H=1
+   _STL_ITERATOR_BASE_TYPES_H=1
+   _STL_ITERATOR_H=1
+   _STL_LIST_H=1
+   _STL_MAP_H=1
+   _STL_MULTIMAP_H=1
+   _STL_MULTISET_H=1
+   _STL_PAIR_H=1
+   _STL_SET_H=1
+   _STL_TREE_H=1
+   _STL_UNINITIALIZED_H=1
+   _STL_VECTOR_H=1
+   _STREAMBUF_ITERATOR_H=1
+   _STREAMBUF_TCC=1
+   _STRINGFWD_H=1
+   _TYPEINFO=
+   _VECTOR_TCC=1
+   _XMLRPCVALUE_H_=
+   __builtin_constant_p(exp)=0
+   __builtin_offsetof(T,m)=(reinterpret_cast <size_t>(&reinterpret_cast <const volatile char &>(static_cast<T*> (0)->m)))
+   __builtin_types_compatible_p(x,y)=__builtin_types_compatible_p(sizeof(x),sizeof(y))
+   __builtin_va_arg(ap,type)=*(typeof(type) *)ap
+   __catch(X)=if (false)
+   __CDT_PARSER__=1
+   __complex__=_Complex
+   __cplusplus=1
+   __DATE__="Oct 31 2017"
+   __EXCEPTION__=
+   __extension__=
+   __FILE__="file"
+   __glibcxx_class_requires(_a,_b)=
+   __glibcxx_class_requires2(_a,_b,_c)=
+   __glibcxx_class_requires3(_a,_b,_c,_d)=
+   __glibcxx_class_requires4(_a,_b,_c,_d,_e)=
+   __glibcxx_digits(_Tp)=(sizeof(_Tp) * __CHAR_BIT__ - __glibcxx_signed(_Tp))
+   __glibcxx_digits10(_Tp)=__glibcxx_floating(_Tp, __FLT_DIG__, __DBL_DIG__, __LDBL_DIG__)
+   __glibcxx_floating(_Tp,_Fval,_Dval,_LDval)=(std::__are_same<_Tp, float>::__value ? _Fval : std::__are_same<_Tp, double>::__value ? _Dval : _LDval)
+   __glibcxx_function_requires(...)=
+   __glibcxx_max(_Tp)=(__glibcxx_signed(_Tp) ? (((((_Tp)1 << (__glibcxx_digits(_Tp) - 1)) - 1) << 1) + 1) : ~(_Tp)0)
+   __glibcxx_max_digits10(_Tp)=(2 + __glibcxx_floating(_Tp, __FLT_MANT_DIG__, __DBL_MANT_DIG__, __LDBL_MANT_DIG__) * 643L / 2136)
+   __glibcxx_max_exponent10(_Tp)=__glibcxx_floating(_Tp, __FLT_MAX_10_EXP__, __DBL_MAX_10_EXP__, __LDBL_MAX_10_EXP__)
+   __glibcxx_min(_Tp)=(__glibcxx_signed(_Tp) ? (_Tp)1 << __glibcxx_digits(_Tp) : (_Tp)0)
+   __glibcxx_requires_cond(_Cond,_Msg)=
+   __glibcxx_requires_heap(_First,_Last)=
+   __glibcxx_requires_heap_pred(_First,_Last,_Pred)=
+   __glibcxx_requires_nonempty()=
+   __glibcxx_requires_non_empty_range(_First,_Last)=
+   __glibcxx_requires_partitioned_lower(_First,_Last,_Value)=
+   __glibcxx_requires_partitioned_lower_pred(_First,_Last,_Value,_Pred)=
+   __glibcxx_requires_partitioned_upper(_First,_Last,_Value)=
+   __glibcxx_requires_partitioned_upper_pred(_First,_Last,_Value,_Pred)=
+   __glibcxx_requires_sorted(_First,_Last)=
+   __glibcxx_requires_sorted_pred(_First,_Last,_Pred)=
+   __glibcxx_requires_sorted_set(_First1,_Last1,_First2)=
+   __glibcxx_requires_sorted_set_pred(_First1,_Last1,_First2,_Pred)=
+   __glibcxx_requires_string(_String)=
+   __glibcxx_requires_string_len(_String,_Len)=
+   __glibcxx_requires_subscript(_N)=
+   __glibcxx_requires_valid_range(_First,_Last)=
+   __glibcxx_signed(_Tp)=((_Tp)(-1) < 0)
+   __GXX_MERGED_TYPEINFO_NAMES=0
+   __GXX_TYPEINFO_EQUALITY_INLINE=0
+   __imag__=(int)
+   __INT_N(TYPE)=template<> struct __is_integer<TYPE> { enum { __value = 1 }; typedef __true_type __type; }; template<> struct __is_integer<unsigned TYPE> { enum { __value = 1 }; typedef __true_type __type; };
+   __LINE__=1
+   __null=0
+   __offsetof__(x)=(x)
+   __real__=(int)
+   __ROSCONSOLE_FUNCTION__=""
+   __stdcall=
+   __STDC__=1
+   __thread=
+   __throw_exception_again=
+   __TIME__="17:04:15"
+   __try=if (true)
+
+Macro definitions (from files actually parsed):
+
+Unresolved includes (from headers in index):
+   Unresolved inclusion: stdlib.h in file file:/opt/ros/kinetic/include/ros/platform.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/string
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/bits/stringfwd.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/bits/memoryfwd.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/bits/stl_algobase.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/bits/functexcept.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/bits/cpp_type_traits.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/ext/type_traits.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/bits/move.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/bits/concept_check.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/bits/stl_iterator_base_types.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/cwchar
+   Unresolved inclusion: bits/c++allocator.h in file file:/usr/include/c++/5/bits/allocator.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/bits/localefwd.h
+   Unresolved inclusion: bits/c++locale.h in file file:/usr/include/c++/5/bits/localefwd.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/iosfwd
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/cctype
+   Unresolved inclusion: ctype.h in file file:/usr/include/c++/5/cctype
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/ext/atomicity.h
+   Unresolved inclusion: bits/gthr.h in file file:/usr/include/c++/5/ext/atomicity.h
+   Unresolved inclusion: bits/atomic_word.h in file file:/usr/include/c++/5/ext/atomicity.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/iostream
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/exception
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/streambuf
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/cwctype
+   Unresolved inclusion: bits/ctype_base.h in file file:/usr/include/c++/5/bits/locale_facets.h
+   Unresolved inclusion: bits/ctype_inline.h in file file:/usr/include/c++/5/bits/locale_facets.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/cmath
+   Unresolved inclusion: math.h in file file:/usr/include/c++/5/cmath
+   Unresolved inclusion: math.h in file file:/opt/ros/kinetic/include/ros/duration.h
+   Unresolved inclusion: limits.h in file file:/usr/include/c++/5/climits
+   Unresolved inclusion: stdint.h in file file:/opt/ros/kinetic/include/ros/duration.h
+   Unresolved inclusion: boost/math/special_functions/round.hpp in file file:/opt/ros/kinetic/include/ros/time.h
+   Unresolved inclusion: sys/time.h in file file:/opt/ros/kinetic/include/ros/time.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/cstdio
+   Unresolved inclusion: stdio.h in file file:/usr/include/c++/5/cstdio
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/cstdarg
+   Unresolved inclusion: stdarg.h in file file:/usr/include/c++/5/cstdarg
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/new
+   Unresolved inclusion: log4cxx/level.h in file file:/opt/ros/kinetic/include/ros/console.h
+   Unresolved inclusion: boost/static_assert.hpp in file file:/opt/ros/kinetic/include/ros/static_assert.h
+   Unresolved inclusion: stdlib.h in file file:/opt/ros/kinetic/include/ros/assert.h
+   Unresolved inclusion: stdint.h in file file:/opt/ros/kinetic/include/ros/common.h
+   Unresolved inclusion: assert.h in file file:/opt/ros/kinetic/include/ros/common.h
+   Unresolved inclusion: stddef.h in file file:/opt/ros/kinetic/include/ros/common.h
+   Unresolved inclusion: boost/shared_ptr.hpp in file file:/opt/ros/kinetic/include/ros/forwards.h
+   Unresolved inclusion: boost/make_shared.hpp in file file:/opt/ros/kinetic/include/ros/forwards.h
+   Unresolved inclusion: boost/weak_ptr.hpp in file file:/opt/ros/kinetic/include/ros/forwards.h
+   Unresolved inclusion: boost/function.hpp in file file:/opt/ros/kinetic/include/ros/forwards.h
+   Unresolved inclusion: boost/shared_ptr.hpp in file file:/opt/ros/kinetic/include/ros/datatypes.h
+   Unresolved inclusion: boost/shared_array.hpp in file file:/opt/ros/kinetic/include/ros/serialized_message.h
+   Unresolved inclusion: boost/shared_ptr.hpp in file file:/opt/ros/kinetic/include/ros/serialized_message.h
+   Unresolved inclusion: boost/shared_array.hpp in file file:/opt/ros/kinetic/include/ros/common.h
+   Unresolved inclusion: stdint.h in file file:/opt/ros/kinetic/include/ros/types.h
+   Unresolved inclusion: string.h in file file:/opt/ros/kinetic/include/ros/message.h
+   Unresolved inclusion: boost/shared_ptr.hpp in file file:/opt/ros/kinetic/include/ros/message.h
+   Unresolved inclusion: boost/array.hpp in file file:/opt/ros/kinetic/include/ros/message.h
+   Unresolved inclusion: stdint.h in file file:/opt/ros/kinetic/include/ros/message.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/cstddef
+   Unresolved inclusion: stddef.h in file file:/usr/include/c++/5/cstddef
+   Unresolved inclusion: boost/utility/enable_if.hpp in file file:/opt/ros/kinetic/include/ros/message_traits.h
+   Unresolved inclusion: boost/type_traits/remove_const.hpp in file file:/opt/ros/kinetic/include/ros/message_traits.h
+   Unresolved inclusion: boost/type_traits/remove_reference.hpp in file file:/opt/ros/kinetic/include/ros/message_traits.h
+   Unresolved inclusion: boost/array.hpp in file file:/opt/ros/kinetic/include/ros/serialization.h
+   Unresolved inclusion: boost/call_traits.hpp in file file:/opt/ros/kinetic/include/ros/serialization.h
+   Unresolved inclusion: boost/utility/enable_if.hpp in file file:/opt/ros/kinetic/include/ros/serialization.h
+   Unresolved inclusion: boost/mpl/and.hpp in file file:/opt/ros/kinetic/include/ros/serialization.h
+   Unresolved inclusion: boost/mpl/or.hpp in file file:/opt/ros/kinetic/include/ros/serialization.h
+   Unresolved inclusion: boost/mpl/not.hpp in file file:/opt/ros/kinetic/include/ros/serialization.h
+   Unresolved inclusion: bits/c++config.h in file file:/usr/include/c++/5/cstring
+   Unresolved inclusion: string.h in file file:/usr/include/c++/5/cstring
+   Unresolved inclusion: boost/bind.hpp in file file:/opt/ros/kinetic/include/ros/publisher.h
+   Unresolved inclusion: boost/type_traits/is_void.hpp in file file:/opt/ros/kinetic/include/ros/message_event.h
+   Unresolved inclusion: boost/type_traits/is_base_of.hpp in file file:/opt/ros/kinetic/include/ros/message_event.h
+   Unresolved inclusion: boost/type_traits/is_const.hpp in file file:/opt/ros/kinetic/include/ros/message_event.h
+   Unresolved inclusion: boost/type_traits/add_const.hpp in file file:/opt/ros/kinetic/include/ros/message_event.h
+   Unresolved inclusion: boost/type_traits/remove_const.hpp in file file:/opt/ros/kinetic/include/ros/message_event.h
+   Unresolved inclusion: boost/utility/enable_if.hpp in file file:/opt/ros/kinetic/include/ros/message_event.h
+   Unresolved inclusion: boost/function.hpp in file file:/opt/ros/kinetic/include/ros/message_event.h
+   Unresolved inclusion: boost/make_shared.hpp in file file:/opt/ros/kinetic/include/ros/message_event.h
+   Unresolved inclusion: boost/type_traits/add_const.hpp in file file:/opt/ros/kinetic/include/ros/parameter_adapter.h
+   Unresolved inclusion: boost/type_traits/remove_const.hpp in file file:/opt/ros/kinetic/include/ros/parameter_adapter.h
+   Unresolved inclusion: boost/type_traits/remove_reference.hpp in file file:/opt/ros/kinetic/include/ros/parameter_adapter.h
+   Unresolved inclusion: boost/type_traits/add_const.hpp in file file:/opt/ros/kinetic/include/ros/subscription_callback_helper.h
+   Unresolved inclusion: boost/type_traits/remove_const.hpp in file file:/opt/ros/kinetic/include/ros/subscription_callback_helper.h
+   Unresolved inclusion: boost/type_traits/remove_reference.hpp in file file:/opt/ros/kinetic/include/ros/subscription_callback_helper.h
+   Unresolved inclusion: boost/type_traits/is_base_of.hpp in file file:/opt/ros/kinetic/include/ros/subscription_callback_helper.h
+   Unresolved inclusion: boost/utility/enable_if.hpp in file file:/opt/ros/kinetic/include/ros/subscription_callback_helper.h
+   Unresolved inclusion: boost/make_shared.hpp in file file:/opt/ros/kinetic/include/ros/subscription_callback_helper.h
+   Unresolved inclusion: boost/type_traits/remove_reference.hpp in file file:/opt/ros/kinetic/include/ros/service_traits.h
+   Unresolved inclusion: boost/type_traits/remove_const.hpp in file file:/opt/ros/kinetic/include/ros/service_traits.h
+   Unresolved inclusion: boost/type_traits/is_base_of.hpp in file file:/opt/ros/kinetic/include/ros/service_callback_helper.h
+   Unresolved inclusion: boost/utility/enable_if.hpp in file file:/opt/ros/kinetic/include/ros/service_callback_helper.h
+   Unresolved inclusion: boost/lexical_cast.hpp in file file:/opt/ros/kinetic/include/ros/transport_hints.h
+   Unresolved inclusion: boost/shared_ptr.hpp in file file:/opt/ros/kinetic/include/ros/spinner.h
+   Unresolved inclusion: boost/bind.hpp in file file:/opt/ros/kinetic/include/ros/node_handle.h
+   Unresolved inclusion: time.h in file file:/opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
+   Unresolved inclusion: boost/utility.hpp in file file:/opt/ros/kinetic/include/ros/single_subscriber_publisher.h
+   Unresolved inclusion: boost/shared_ptr.hpp in file file:/opt/ros/kinetic/include/ros/service.h
+   Unresolved inclusion: boost/shared_ptr.hpp in file file:/opt/ros/kinetic/include/ros/topic.h
+
+Scanner problems:
+
+Parser problems:
+
+Unresolved names:
+   Attempt to use symbol failed: init in file /home/sherif/catkin_ws/src/beginner_tutorials/src/talker.cpp:37
+   Attempt to use symbol failed: advertise<std_msgs::String> in file /home/sherif/catkin_ws/src/beginner_tutorials/src/talker.cpp:63
+   Attempt to use symbol failed: advertise<std_msgs::String> in file /home/sherif/catkin_ws/src/beginner_tutorials/src/talker.cpp:63
+   Attempt to use symbol failed: stringstream in file /home/sherif/catkin_ws/src/beginner_tutorials/src/talker.cpp:78
+   Attempt to use symbol failed: str in file /home/sherif/catkin_ws/src/beginner_tutorials/src/talker.cpp:80
+   Attempt to use symbol failed: initializeLogLocation in file /home/sherif/catkin_ws/src/beginner_tutorials/src/talker.cpp:82
+   Attempt to use symbol failed: c_str in file /home/sherif/catkin_ws/src/beginner_tutorials/src/talker.cpp:82
+
+Exceptions in name resolution:

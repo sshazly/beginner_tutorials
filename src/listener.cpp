@@ -3,13 +3,17 @@
  * Copyright (C) 2017 by Sherif Shazly                      *
  *                                                          *
  ***********************************************************/
-//   @file  listener.cpp
-//   @brief   This is a cpp file to listen to a node n in ROS environment
-//   @author    Unknown ROS-Developer
-//   @date  2017/10/31
-//  @copyright Copyright (C) 2017 BSD
-//  @bug No known bugs.
-//
+/**
+ *   @file  listener.cpp
+ *   @brief   This file listens to node n in the ROS environment
+ *
+ *   Reads and prints out text to the ROS environment
+ *
+ *   @author    Sherif Shazly
+ *   @date  2017/10/31
+ *  @copyright Copyright (C) 2017 BSD
+ *  @bug No known bugs.
+ */
 
 #include "ros/ros.h"
 #include "std_msgs/String.h"
@@ -65,5 +69,5 @@ int main(int argc, char **argv) {
   //
   ros::spin();
 
-  return 0;
+  return(0);
 }
