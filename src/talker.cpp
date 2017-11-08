@@ -17,6 +17,7 @@
 
 #include "ros/ros.h"
 #include "std_msgs/String.h"
+#include <beginner_tutorials/StringValue.h>
 
 #include <sstream>
 
@@ -60,8 +61,21 @@ int main(int argc, char **argv) {
   // than we can send them, the number here specifies how many messages to
   // buffer up before throwing some away.
   //
-  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
 
+  ros::ServiceClient client = n.serviceClient<beginner_tutorials::StringValue>("print_message");
+  beginner_tutorials::StringValue srv;
+  srv.request.strReq = argv[1];
+  if (client.call(srv))
+  {
+    ROS_WARN_STREAM("Message: "<< srv.response.strRes);
+  }
+  else
+  {
+    ROS_ERROR_STREAM("Failed to call service print_message");
+    ROS_FATAL_STREAM("Failed to call service print_message fatal error");
+    return 1;
+  }
+  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
   ros::Rate loop_rate(10);
 
   //
@@ -70,17 +84,18 @@ int main(int argc, char **argv) {
   //
   int count = 0;
   while (ros::ok()) {
+
     //
     // This is a message object. You stuff it with data, and then publish it.
     //
     std_msgs::String msg;
 
     std::stringstream ss;
-    ss << "look at me, I'm a real booooyyyy " << count;
+    ss << srv.response.strRes << count;
     msg.data = ss.str();
 
     ROS_INFO("%s", msg.data.c_str());
-
+    ROS_DEBUG_STREAM("Debug message");
     //
     // The publish() function is how you send messages. The parameter
     // is the message object. The type of this object must agree with the type

@@ -44,6 +44,12 @@ rosgraph
 rospack
 roslib
 rospy
+--------------------------------------------------------------
+
+# Clonging Repo
+
+git clone -b Week10_HW https://github.com/sshazly/beginner_tutorials
+
 
 --------------------------------------------------------------
 
@@ -61,21 +67,49 @@ Once cloned, the implementation of the Publisher/Subscriber can be achieved by:
 
  	$ catkin_make
 
-3)  Opening three new terminals...
+3)  Opening five new terminals...
 
 On the first terminal:
 
  	$ roscore
 
 On the second terminal:
-
- 	$ source ./devel/setup.bash
- 	$ rosrun beginner_tutorials talker
-
-On the third terminal
-
+	$ cd ~/catkin_ws/
  	$ source ./devel/setup.bash
  	$ rosrun beginner_tutorials listener
 
+On the third terminal
+	$ cd ~/catkin_ws/
+ 	$ source ./devel/setup.bash
+ 	$ rosrun beginner_tutorials talkerServer
+
+On the fourth terminal
+	$ cd ~/catkin_ws/
+ 	$ source ./devel/setup.bash
+ 	$ rosrun beginner_tutorials talker
+
+On a seperate fifth terminal you can change the message sent by using 
+	$ cd ~/catkin_ws/
+	$ source ./devel/setup.bash
+	$ rosservice call /print_message "input message within quotation"
+
+
+Can't figure out how to update variable within the loop in talker
+
+
+OR 
+
+run the package
+
+On the first terminal:
+
+ 	$ roscore
+
+On the second terminal:
+	$ cd ~/catkin_ws/
+ 	$ source ./devel/setup.bash
+ 	$ roslaunch beginner_tutorials conversation.launch
+
+-------------------------------------------------------------------
 	
 

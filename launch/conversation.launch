@@ -1,0 +1,30 @@
+<launch>
+    <group ns="conversate">
+	<node 
+		pkg="beginner_tutorials" 
+		name="talkerServer_node" 
+		type="talkerServer"
+		launch-prefix="xterm -e"
+		output="screen"
+		
+	/>
+
+	<node 
+		pkg="beginner_tutorials" 
+		name="listener_node" 
+		type="listener"
+		launch-prefix="xterm -e"
+		output="screen"
+	/>
+
+	<node 
+		pkg="beginner_tutorials" 
+		name="talker_node" 
+		type="talker"
+		launch-prefix="xterm -e"
+		output="screen"
+	/>
+
+    </group>
+
+</launch>

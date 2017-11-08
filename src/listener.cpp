@@ -23,6 +23,7 @@
 //
 void chatterCallBack(const std_msgs::String::ConstPtr& msg) {
   ROS_INFO("[%s]", msg->data.c_str());
+ROS_DEBUG("[%s]", msg->data.c_str());
 }
 
 int main(int argc, char **argv) {
